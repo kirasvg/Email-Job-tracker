@@ -88,9 +88,9 @@ const extractEmailInfo = async (
   }
 
   // Fallback to regex-based parsing
-  let companyName = 'Unknown Company';
-  let jobProfile = 'Unknown Position';
-  let applicationStatus = 'Applied';
+  const companyName = 'Unknown Company';
+  const jobProfile = 'Unknown Position';
+  const applicationStatus = 'Applied';
 
   // Rest of the regex parsing logic remains the same...
   // (Previous regex parsing code remains unchanged)
