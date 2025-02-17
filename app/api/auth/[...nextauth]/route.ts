@@ -1,4 +1,4 @@
-import NextAuth, { DefaultSession, Account, JWT, Session, CallbacksOptions } from "next-auth";
+import NextAuth, { DefaultSession, Session, CallbacksOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
 // Add this type declaration
@@ -39,4 +39,4 @@ export const authOptions = {
 
 const handler = NextAuth(authOptions);
 
-export { handler as GET, handler as POST }; 
+export { handler as GET, handler as POST };

@@ -10,7 +10,7 @@ export async function getGmailMessages(accessToken: string) {
     const response = await gmail.users.messages.list({
       userId: 'me',
       q: 'subject:"job application" OR subject:"application confirmation"',
-      maxResults: 1000,
+      maxResults: 100,
     });
 
     const messages = response.data.messages || [];

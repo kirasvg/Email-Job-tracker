@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     const response = await gmail.users.messages.list({
       userId: 'me',
       q: `subject:(job OR application OR applied OR position OR opportunity OR software) after:${afterDate}`,
-      maxResults: 1000,
+      maxResults: 100,
     });
 
     const messages = response.data.messages || [];
